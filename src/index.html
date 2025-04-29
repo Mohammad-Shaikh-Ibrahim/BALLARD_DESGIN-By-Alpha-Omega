@@ -19,6 +19,7 @@
     <script src="main.js" type="module" defer></script>
   </head>
   <body>
+    <!-- Start Header -->
     <header class="container">
       <div class="topHeader">
         <a href="#">Free Desgin Services</a>
@@ -31,27 +32,169 @@
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="headerIcons">
-            <a href="#">
-                <i class="fa-solid fa-store"></i>
-                <span>Stores</span>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-truck"></i>
-                <span>Outer Status</span>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Account</span>
-            </a>
-            <a href="#" class="cartLink">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Cart</span>
-                <span class="cartBubble">0</span>
-                <div class="cartPopup">Your shopping cart is empty</div>
-            </a>
+          <a href="#">
+            <i class="fa-solid fa-store"></i>
+            <span>Stores</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-truck"></i>
+            <span>Outer Status</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Account</span>
+          </a>
+          <a href="#" class="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+            <span class="cartBubble">0</span>
+            <div class="cartPopup">Your shopping cart is empty</div>
+          </a>
         </div>
-        <hr>
       </div>
+      <hr id="hr1" />
+      <!-- Navbar -->
+      <nav>
+        <ul class="navList">
+          <li class="navItem">
+            <a class="navLink" href="#">NEW</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">ALL NEW ITEMS</a></li>
+                <li><a href="#">THE DORM COLLECTION</a></li>
+                <li><a href="#">OUTDOOR</a></li>
+                <li><a href="#">FURNITURE</a></li>
+                <li><a href="#">MIRRORS & ART</a></li>
+                <li><a href="#">DECOR & MORE</a></li>
+                <li><a href="#">TABLETOP</a></li>
+                <li><a href="#">RUGS & DRAPERY</a></li>
+                <li><a href="#">LIGHTING</a></li>
+                <li><a href="#">BED & BATH</a></li>
+                <li><a href="#">FABRIC BY THE YARD</a></li>
+              </ul>
+              <div class="dropdown-image">
+                <img
+                  id="dropdownImgNew"
+                  src="your-image.jpg"
+                  alt="Your Entry Needs This"
+                />
+                <h4>Your Entry Needs This</h4>
+                <p>
+                  Don't miss the feminine details and narrow profile of our
+                  Dawson Cabinet.
+                </p>
+                <a href="#">SHOP NOW »</a>
+              </div>
+            </div>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Dorm</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">ALL NEW ITEMS</a></li>
+                <li><a href="#">THE DORM COLLECTION</a></li>
+                <li><a href="#">OUTDOOR</a></li>
+                <li><a href="#">FURNITURE</a></li>
+                <li><a href="#">MIRRORS & ART</a></li>
+                <li><a href="#">DECOR & MORE</a></li>
+                <li><a href="#">TABLETOP</a></li>
+                <li><a href="#">RUGS & DRAPERY</a></li>
+                <li><a href="#">LIGHTING</a></li>
+                <li><a href="#">BED & BATH</a></li>
+                <li><a href="#">FABRIC BY THE YARD</a></li>
+              </ul>
+              <div class="dropdown-image">
+                <img
+                  id="dropdownImgDrom"
+                  src="your-image.jpg"
+                  alt="Your Entry Needs This"
+                />
+                <h4>Your Entry Needs This</h4>
+                <p>
+                  Don't miss the feminine details and narrow profile of our
+                  Dawson Cabinet.
+                </p>
+                <a href="#">SHOP NOW »</a>
+              </div>
+            </div>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Outdoor</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Furniture</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Mirrors & Art</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Decor & More</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Rugs & Drapery</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Lighting</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Bed & Bath</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Fabric</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Holiday & Gifts</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#" id="clearance">Clearance</a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr id="hr2" />
     </header>
+
+    <!-- Start WallArt -->
+    <section id="wallArt" class="container">
+      <div id="breadcrumbs">
+        <a href="#">Home</a> <span> > </span> <a href="#">Mirrors & Art</a>
+        <span> > </span> <a href="#">Shop All Wall Art</a>
+      </div>
+      <h1>Wall Art</h1>
+      <hr />
+      <div id="categories"></div>
+      <hr />
+    </section>
+
+    <!-- Start Main -->
+    <main class="container">
+      <!-- Start Filter Product & Sort -->
+      <div id="filter-sort">
+        <div id="filtersProduct">
+          <h3>Filter Product</h3>
+          <select>
+            <option>Price Range</option>
+          </select>
+          <select>
+            <option>Color</option>
+          </select>
+          <select>
+            <option>Frame Finish</option>
+          </select>
+          <select>
+            <option>Type</option>
+          </select>
+          <select>
+            <option>Orientation</option>
+          </select>
+          <select>
+            <option>Subject</option>
+          </select>
+        </div>
+        <div id="sortProduct">
+          <h3>Sort</h3>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

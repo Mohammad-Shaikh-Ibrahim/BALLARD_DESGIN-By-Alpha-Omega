@@ -1,0 +1,33 @@
+{
+    "wallArt":{
+        "breadcrumbs": ["Home", "Mirrors & Art", "Shop All Wall Art"],
+        "categories":[
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/coastal.jpg",
+                    "name":"COASTAL"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/floral.jpg",
+                    "name":"FLORAL"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/animal.jpg",
+                    "name":"ANIMAL"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/abstract.jpg",
+                    "name":"ABSTRACT"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/landscape.jpg",
+                    "name":"LANDSCAPE"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/nature.jpg",
+                    "name":"NATURE"
+                }   
+        ]
+    }
+
+        
+}

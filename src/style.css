@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
 
 
 :root{
     --basicFontColor:#333333;
     --logoColor:#635446;
     --headerIconColor:#414141;
+    --hrColor:#cccccc;
     --headerFont:"Montserrat", Verdana, Helvetica, sans-serif;
     --logoFont:"Bondoi", Helvetica, sans-serif;
+    --cormorantFont:"Cormorant (woff2)",Times,"Times New Roman",serif;
+    
 }
 *{
     box-sizing: border-box;
@@ -59,7 +62,7 @@
 }
 .searchBox{
     padding:0.5em;
-    border: #cccccc 0.075em solid;
+    border: 0.075em solid var(--hrColor);
     border-radius: 0.2em;
     width: 25em;
     display: flex;
@@ -142,7 +145,8 @@
 .cartPopup {
     display: none;
     position: absolute;
-    top: 3em; /* Adjust position */
+    z-index: 999;
+    top: 3em; 
     left: 50%;
     transform: translateX(-90%);
     background-color: white;
@@ -156,4 +160,188 @@
 .cartLink:hover .cartPopup {
     display: block;
 }
+  hr{
+    border: 0;
+    border-top: 1px solid var(--hrColor);
+  }
+  #hr1{
+    margin: 0 calc(-50vw + 61%); 
+    width: 100vw; 
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 1.2em 0 0.5em;
+  }
+  #hr2{
+    margin: 0 calc(-50vw + 61%); 
+    width: 100vw; 
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 0.5em 0 1.2em;
+  }
+
+  /* navbar */
+
+  #clearance{
+    color: #e03e3e ;
+  }
+
+  nav ul li a:hover{
+    border-bottom: 0.25em solid var(--logoColor);
+  }
+
+
+  nav {
+    position: relative;
+
+  }
+  
+  .navList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    position: relative;  
+  }
+  
+  .navLink {
+    font-size: 0.8em;
+    color: var(--headerIconColor);
+    font-weight: 550;
+    border-bottom: 0.25em solid transparent;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  .navLink:hover{
+    border-bottom: 0.25em solid var(--logoColor);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 1.75em;
+    left: 0;
+    background-color:rgba(220, 220, 220);
+    width: 30em;
+    z-index: 999;
+    padding: 1.5em;
+    border-bottom: 0.3em solid var(--logoColor);
+    display: none;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.4em;
+  }
+  
+  .dropdown-menu ul li a {  
+    font-weight: 500;
+    color: var(--basicFontColor) !important;
+    text-decoration: none;
+    display: block;
+    border-bottom: 0.25em solid transparent;
+  }
+  .dropdown-menu ul li a:hover{
+    text-decoration: underline;
+    border-bottom: 0.25em solid transparent;
+  }
+  
+  .dropdown-image {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .dropdown-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  
+  .navItem:hover .dropdown-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  
 /* End Header */
+
+/* Start Wall Art */
+#wallArt{
+  padding: 0;
+}
+#breadcrumbs{
+  margin: 0;
+  padding: 0;
+}
+.bold{
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: var(--basicFontColor);
+}
+.bold:hover{
+  border-bottom: 1px solid var(--basicFontColor);
+}
+#basePosition{
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: #595c5f;
+}
+h1{
+  font-family: var(--cormorantFont);
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.75em;
+}
+#categories{
+  padding:auto 2.5em ;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5em;
+}
+.category{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5em;
+  align-items: center;
+}
+.category img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.category a{
+  color: var(--basicFontColor);
+  font-size: 0.75rem;
+}
+.category:hover img{
+  opacity: calc(50%);
+}
+.category:hover a{
+  border-bottom: 1px solid var(--basicFontColor);
+}
+
+/* Start Main */
+/* Start Filter Product & Sort */
+#filter-sort{
+  margin-top: 1.75em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
