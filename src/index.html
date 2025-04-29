@@ -16,8 +16,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module" defer></script>
   </head>
   <body>
+    <!-- Start Header -->
     <header class="container">
       <div class="topHeader">
         <a href="#">Free Desgin Services</a>
@@ -71,7 +73,11 @@
                 <li><a href="#">FABRIC BY THE YARD</a></li>
               </ul>
               <div class="dropdown-image">
-                <img id="dropdownImgNew" src="your-image.jpg" alt="Your Entry Needs This" />
+                <img
+                  id="dropdownImgNew"
+                  src="your-image.jpg"
+                  alt="Your Entry Needs This"
+                />
                 <h4>Your Entry Needs This</h4>
                 <p>
                   Don't miss the feminine details and narrow profile of our
@@ -98,7 +104,11 @@
                 <li><a href="#">FABRIC BY THE YARD</a></li>
               </ul>
               <div class="dropdown-image">
-                <img id="dropdownImgDrom" src="your-image.jpg" alt="Your Entry Needs This" />
+                <img
+                  id="dropdownImgDrom"
+                  src="your-image.jpg"
+                  alt="Your Entry Needs This"
+                />
                 <h4>Your Entry Needs This</h4>
                 <p>
                   Don't miss the feminine details and narrow profile of our
@@ -144,16 +154,47 @@
       <hr id="hr2" />
     </header>
 
+    <!-- Start WallArt -->
     <section id="wallArt" class="container">
       <div id="breadcrumbs">
-        <a href="#">Home</a> <span> > </span> <a href="#">Mirrors & Art</a> <span> > </span> <a href="#">Shop All Wall Art</a>
+        <a href="#">Home</a> <span> > </span> <a href="#">Mirrors & Art</a>
+        <span> > </span> <a href="#">Shop All Wall Art</a>
       </div>
       <h1>Wall Art</h1>
-      <hr>
+      <hr />
       <div id="categories"></div>
-      <hr>
+      <hr />
     </section>
-    <script src="main.js" type="module"></script>
-    <script src="./index.js" ></script>
+
+    <!-- Start Main -->
+    <main class="container">
+      <!-- Start Filter Product & Sort -->
+      <div id="filter-sort">
+        <div id="filtersProduct">
+          <h3>Filter Product</h3>
+          <select>
+            <option>Price Range</option>
+          </select>
+          <select>
+            <option>Color</option>
+          </select>
+          <select>
+            <option>Frame Finish</option>
+          </select>
+          <select>
+            <option>Type</option>
+          </select>
+          <select>
+            <option>Orientation</option>
+          </select>
+          <select>
+            <option>Subject</option>
+          </select>
+        </div>
+        <div id="sortProduct">
+          <h3>Sort</h3>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

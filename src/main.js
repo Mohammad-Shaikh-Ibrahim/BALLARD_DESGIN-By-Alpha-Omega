@@ -23,7 +23,7 @@ fetch("data.json")
         return `
           <div class="category">
             <img src="${category.image}" alt="${category.name}">
-            <p>${category.name}</p>
+            <a href="#">${category.name}</a>
           </div>
         `;
       }).join("");

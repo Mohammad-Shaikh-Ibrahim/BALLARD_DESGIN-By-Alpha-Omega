@@ -325,6 +325,23 @@ h1{
   height: 100px;
   object-fit: cover;
 }
-.category p{
+.category a{
+  color: var(--basicFontColor);
   font-size: 0.75rem;
+}
+.category:hover img{
+  opacity: calc(50%);
+}
+.category:hover a{
+  border-bottom: 1px solid var(--basicFontColor);
+}
+
+/* Start Main */
+/* Start Filter Product & Sort */
+#filter-sort{
+  margin-top: 1.75em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
