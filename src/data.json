@@ -27,7 +27,151 @@
                     "name":"NATURE"
                 }   
         ]
-    }
-
-        
+    },
+    "products":[
+        {
+            "image":" ",
+            "isNew":"New",
+            "images":[],
+            "name":"Wildflower Art",
+            "oldPrice":"$239.00 - $449.00 ",
+            "newPrice":"$167 - #314.30 "
+        },
+        {
+            "image":" ",
+            "isNew":"New",
+            "images":[],
+            "name":"Sweet Pea Art",
+            "oldPrice":"$589.00 - $789.00",
+            "newPrice":"$412.30 - $552.30"
+        },
+        {
+            "image":" ",
+            "isNew":"New",
+            "images":[],
+            "name":"Meagan Block Print Floral Art",
+            "oldPrice":"$359.00 - $599.00",
+            "newPrice":"$251.30 - $419.30"
+        },
+        {
+            "image":" ",
+            "isNew":"New",
+            "images":[],
+            "name":"Flower Book Art",
+            "oldPrice":"$359.00 - $599.00",
+            "newPrice":"$251.30 - $419.30"
+        },
+        {
+            "image":" ",
+            "isNew":"New",
+            "images":[],
+            "name":"Calloway Art",
+            "oldPrice":"$319.00 $679.00",
+            "newPrice":"$223.30 - $475.30"
+        },
+        {
+            "image":" ",
+            "isNew":"New",
+            "images":[],
+            "name":"Arcadia Art",
+            "oldPrice":"$319.00 $679.00",
+            "newPrice":"$223.30 - $475.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Peony Wish Art",
+            "oldPrice":"$649.00 - $879.00",
+            "newPrice":"$454.30 - $615.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Bay Trail Art",
+            "oldPrice":"$389.00 - $679.00",
+            "newPrice":"$272.30 - $475.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Across The Water Art",
+            "oldPrice":"$449.00 - $1,029.00",
+            "newPrice":"$314.30 - $720.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"History Of Hummingbirds Art",
+            "oldPrice":"$319.00 - $579.00",
+            "newPrice":"$223.30 - $405.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Paper Flower Shadow Box Art",
+            "oldPrice":"$1,339.00",
+            "newPrice":"$937.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Long Time No Sea Art",
+            "oldPrice":"$589.00 - #949.00",
+            "newPrice":"$412.30 - $664.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"I've Never Been More Shore Art",
+            "oldPrice":"$$589.00 - $959.00",
+            "newPrice":"$412.30 - $671.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Enchanted Countryside Art",
+            "oldPrice":"$449.00 - $919.00",
+            "newPrice":"$314.30 - $643.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Walking Alongside The Lake Art",
+            "oldPrice":"$559.00 - $899.00",
+            "newPrice":"$391.30 - $629.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Two Hearts Afloat Art",
+            "oldPrice":"$659.00 - $1,059.00",
+            "newPrice":"$461.30 - $741.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Time To Harvest Art",
+            "oldPrice":"$589.00 - $1,179.00",
+            "newPrice":"$412.30 - $825.30"
+        },
+        {
+            "image":" ",
+            "isNew":"",
+            "images":[],
+            "name":"Spring Serenade Art",
+            "oldPrice":"$624.00 - $929.00",
+            "newPrice":"$436.80 - $650.30"
+        }
+    ]      
 }
