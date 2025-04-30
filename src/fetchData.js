@@ -19,15 +19,19 @@ fetch("data.json")
     // Categories
     const categories = data.wallArt.categories;
 
-    const categoriesHTML = categories.map(category => {
+    const categoriesHTML = categories
+      .map((category) => {
         return `
           <div class="category">
             <img src="${category.image}" alt="${category.name}">
             <a href="#">${category.name}</a>
           </div>
         `;
-      }).join("");
+      })
+      .join("");
 
-      document.getElementById("categories").innerHTML = categoriesHTML;
+    document.getElementById("categories").innerHTML = categoriesHTML;
   })
   .catch((error) => console.error("Error:", error));
+
+

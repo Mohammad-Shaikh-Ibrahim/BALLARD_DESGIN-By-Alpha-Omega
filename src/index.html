@@ -16,11 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" type="module" defer></script>
+    <script src="fetchData.js" type="module" defer></script>
+    <script src="mainFunctions.js" type="module" defer></script>
   </head>
   <body>
     <!-- Start Header -->
-    <header class="container">
+    <header id="Header" class="container">
       <div class="topHeader">
         <a href="#">Free Desgin Services</a>
         <a href="">Refer a Friend, Get $50 Off!</a>
@@ -172,29 +173,64 @@
       <div id="filter-sort">
         <div id="filtersProduct">
           <h3>Filter Product</h3>
-          <select>
-            <option>Price Range</option>
-          </select>
-          <select>
-            <option>Color</option>
-          </select>
-          <select>
-            <option>Frame Finish</option>
-          </select>
-          <select>
-            <option>Type</option>
-          </select>
-          <select>
-            <option>Orientation</option>
-          </select>
-          <select>
-            <option>Subject</option>
-          </select>
+          <div id="filter">
+            <div class="custom-select">
+              <div class="select-box" onclick="toggleOptions()">Select options</div>
+              <div class="options-container" id="options">
+                <label><input type="checkbox" value="books"> Books</label>
+                <label><input type="checkbox" value="electronics"> Electronics</label>
+                <label><input type="checkbox" value="clothing"> Clothing</label>
+              </div>
+            </div>
+            <select>
+              <option>Color</option>
+            </select>
+            <select>
+              <option>Frame Finish</option>
+            </select>
+            <select>
+              <option>Type</option>
+            </select>
+            <select>
+              <option>Orientation</option>
+            </select>
+            <select>
+              <option>Subject</option>
+            </select>
+          </div>
         </div>
         <div id="sortProduct">
           <h3>Sort</h3>
+          <select id="sortSelect">
+            <option selected>What's New</option>
+            <option>Relevance</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Alphabetically</option>
+            <option>Customer Ratings</option>
+          </select>
         </div>
       </div>
     </main>
+    <footer>
+      <section id="socialMedia">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </section>
+      <hr>
+      <section id="contact">
+        <div><i class="fa-solid fa-phone"></i> <a href="tel:(800) 536-7551">(800) 536-7551</a></div>
+        <div><i class="fa-regular fa-comment"></i> <a href="#">Live Chat</a></div>
+        <div><i class="fa-regular fa-envelope"></i></i> <a href="mailto:email.example@example.com">Email Us</a></div>
+        <div><i class="fa-solid fa-pencil"></i> <a href="#">Design Services</a></div>
+      </section>
+      <hr>
+    </footer>
+    <section id="toTop">
+      <a href="#Header"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>
   </body>
 </html>
