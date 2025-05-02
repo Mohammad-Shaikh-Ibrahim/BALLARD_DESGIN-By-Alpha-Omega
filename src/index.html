@@ -22,17 +22,17 @@
   <body>
     <!-- Start Header -->
     <header id="Header" class="container">
-      <div class="topHeader">
+      <div class="top-header">
         <a href="#">Free Desgin Services</a>
         <a href="">Refer a Friend, Get $50 Off!</a>
       </div>
-      <div class="mainHeader">
+      <div class="main-header">
         <a href="#">BALLARD DESGINS.</a>
-        <div class="searchBox">
+        <div class="search-box">
           <input type="search" placeholder="What can we help you find?" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="headerIcons">
+        <div class="header-icons">
           <a href="#">
             <i class="fa-solid fa-store"></i>
             <span>Stores</span>
@@ -56,9 +56,9 @@
       <hr id="hr1" />
       <!-- Navbar -->
       <nav>
-        <ul class="navList">
-          <li class="navItem">
-            <a class="navLink" href="#">NEW</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">NEW</a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">ALL NEW ITEMS</a></li>
@@ -88,8 +88,8 @@
               </div>
             </div>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Dorm</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dorm</a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">ALL NEW ITEMS</a></li>
@@ -119,35 +119,35 @@
               </div>
             </div>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Outdoor</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Outdoor</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Furniture</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Furniture</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Mirrors & Art</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mirrors & Art</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Decor & More</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Decor & More</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Rugs & Drapery</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rugs & Drapery</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Lighting</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lighting</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Bed & Bath</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bed & Bath</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Fabric</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fabric</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#">Holiday & Gifts</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Holiday & Gifts</a>
           </li>
-          <li class="navItem">
-            <a class="navLink" href="#" id="clearance">Clearance</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="clearance">Clearance</a>
           </li>
         </ul>
       </nav>
@@ -170,16 +170,23 @@
     <!-- Start Main -->
     <main class="container">
       <!-- Start Filter Product & Sort -->
-      <div id="filter-sort">
+      <div id="filterSort">
         <div id="filtersProduct">
           <h3>Filter Product</h3>
           <div id="filter">
             <div class="custom-select">
-              <div class="select-box" onclick="toggleOptions()">Select options</div>
+              <div class="select-box" onclick="toggleOptions()">
+                Select options
+              </div>
               <div class="options-container" id="options">
-                <label><input type="checkbox" value="books"> Books</label>
-                <label><input type="checkbox" value="electronics"> Electronics</label>
-                <label><input type="checkbox" value="clothing"> Clothing</label>
+                <label><input type="checkbox" value="books" /> Books</label>
+                <label
+                  ><input type="checkbox" value="electronics" />
+                  Electronics</label
+                >
+                <label
+                  ><input type="checkbox" value="clothing" /> Clothing</label
+                >
               </div>
             </div>
             <select>
@@ -211,6 +218,9 @@
           </select>
         </div>
       </div>
+
+      <!-- Products -->
+      <div class="product-container" id="productContainer"></div>
     </main>
     <footer>
       <section id="socialMedia">
@@ -220,16 +230,26 @@
         <i class="fa-brands fa-youtube"></i>
         <i class="fa-brands fa-pinterest-p"></i>
       </section>
-      <hr>
+      <hr id="footer-hr-top" />
       <section id="contact">
-        <div><i class="fa-solid fa-phone"></i> <a href="tel:(800) 536-7551">(800) 536-7551</a></div>
-        <div><i class="fa-regular fa-comment"></i> <a href="#">Live Chat</a></div>
-        <div><i class="fa-regular fa-envelope"></i></i> <a href="mailto:email.example@example.com">Email Us</a></div>
-        <div><i class="fa-solid fa-pencil"></i> <a href="#">Design Services</a></div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:(800) 536-7551">(800) 536-7551</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-comment"></i> <a href="#">Live Chat</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-envelope"></i
+          ><a href="mailto:email.example@example.com">Email Us</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-pencil"></i> <a href="#">Design Services</a>
+        </div>
       </section>
-      <hr>
+      <hr id="footer-hr-bottom" />
     </footer>
-    <section id="toTop">
+    <section id="toTop" >
       <a href="#Header"><i class="fa-solid fa-arrow-up"></i></a>
     </section>
   </body>
