@@ -1,0 +1,188 @@
+{
+    "header":{
+        "logoImage":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/favicons/logo.svg",
+        "navbarImages":{
+            "new":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/espots/2025/MA25/flyouts/new.jpg",
+            "dorm":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/espots/2025/MA25/flyouts/dorm.jpg"
+        }
+    },
+    "wallArt":{
+        "breadcrumbs": ["Home", "Mirrors & Art", "Shop All Wall Art"],
+        "categories":[
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/coastal.jpg",
+                    "name":"COASTAL"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/floral.jpg",
+                    "name":"FLORAL"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/animal.jpg",
+                    "name":"ANIMAL"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/abstract.jpg",
+                    "name":"ABSTRACT"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/landscape.jpg",
+                    "name":"LANDSCAPE"
+                },
+                {
+                    "image":"https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Categories/wall-art/nature.jpg",
+                    "name":"NATURE"
+                }   
+        ]
+    },
+    "products":[
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ893_main&defaultImage=WQ893_main",
+            "isNew":"New",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ893_IND?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ893_RAS?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ893_SAG?$SLI_Swatch$"
+            ],
+            "name":"Wildflower Art",
+            "oldPrice":"$239.00 - $449.00 ",
+            "newPrice":"$167 - #314.30 "
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ892_main&defaultImage=WQ892_main",
+            "isNew":"New",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ892_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ892_II?$SLI_Swatch$"
+            ],
+            "name":"Sweet Pea Art",
+            "oldPrice":"$589.00 - $789.00",
+            "newPrice":"$412.30 - $552.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ891_main&defaultImage=WQ891_main",
+            "isNew":"New",
+            "images":[],
+            "name":"Meagan Block Print Floral Art",
+            "oldPrice":"$359.00 - $599.00",
+            "newPrice":"$251.30 - $419.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ890_main&defaultImage=WQ890_main",
+            "isNew":"New",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ890_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ890_II?$SLI_Swatch$"
+            ],
+            "name":"Flower Book Art",
+            "oldPrice":"$359.00 - $599.00",
+            "newPrice":"$251.30 - $419.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ889_main&defaultImage=WQ889_main",
+            "isNew":"New",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ889_PNK?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ889_PNK?$SLI_Swatch$"
+            ],
+            "name":"Calloway Art",
+            "oldPrice":"$319.00 $679.00",
+            "newPrice":"$223.30 - $475.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ888_main&defaultImage=WQ888_main",
+            "isNew":"New",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ888_PNK?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ888_SPA?$SLI_Swatch$"
+            ],
+            "name":"Arcadia Art",
+            "oldPrice":"$319.00 $679.00",
+            "newPrice":"$223.30 - $475.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ858_main&defaultImage=WQ858_main",
+            "isNew":"",
+            "images":[],
+            "name":"Peony Wish Art",
+            "oldPrice":"$649.00 - $879.00",
+            "newPrice":"$454.30 - $615.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ857_main&defaultImage=WQ857_main",
+            "isNew":"",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ857_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ857_II?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ857_III?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ857_IV?$SLI_Swatch$"
+            ],
+            "name":"Bay Trail Art",
+            "oldPrice":"$389.00 - $679.00",
+            "newPrice":"$272.30 - $475.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ855_main&defaultImage=WQ855_main",
+            "isNew":"",
+            "images":[],
+            "name":"Across The Water Art",
+            "oldPrice":"$449.00 - $1,029.00",
+            "newPrice":"$314.30 - $720.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ852_main&defaultImage=WQ852_main",
+            "isNew":"",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ852_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ852_II?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ852_III?$SLI_Swatch$"
+            ],
+            "name":"History Of Hummingbirds Art",
+            "oldPrice":"$319.00 - $579.00",
+            "newPrice":"$223.30 - $405.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ851_main&defaultImage=WQ851_main",
+            "isNew":"",
+            "images":[],
+            "name":"Paper Flower Shadow Box Art",
+            "oldPrice":"$1,339.00",
+            "newPrice":"$937.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ850_main&defaultImage=WQ850_main",
+            "isNew":"",
+            "images":[],
+            "name":"Long Time No Sea Art",
+            "oldPrice":"$589.00 - #949.00",
+            "newPrice":"$412.30 - $664.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ849_main&defaultImage=WQ849_main",
+            "isNew":"",
+            "images":[],
+            "name":"I've Never Been More Shore Art",
+            "oldPrice":"$$589.00 - $959.00",
+            "newPrice":"$412.30 - $671.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ848_main&defaultImage=WQ848_main",
+            "isNew":"",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ848_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ848_II?$SLI_Swatch$"
+            ],
+            "name":"Enchanted Countryside Art",
+            "oldPrice":"$449.00 - $919.00",
+            "newPrice":"$314.30 - $643.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ843_main&defaultImage=WQ843_main",
+            "isNew":"",
+            "images":[],
+            "name":"Walking Alongside The Lake Art",
+            "oldPrice":"$559.00 - $899.00",
+            "newPrice":"$391.30 - $629.30"
+        }
+    ]      
+}

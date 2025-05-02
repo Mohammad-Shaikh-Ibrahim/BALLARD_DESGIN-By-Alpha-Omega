@@ -16,42 +16,241 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" type="module" defer></script>
+    <script src="fetchData.js" type="module" defer></script>
+    <script src="mainFunctions.js" type="module" defer></script>
   </head>
   <body>
-    <header class="container">
-      <div class="topHeader">
+    <!-- Start Header -->
+    <header id="Header" class="container">
+      <div class="top-header">
         <a href="#">Free Desgin Services</a>
         <a href="">Refer a Friend, Get $50 Off!</a>
       </div>
-      <div class="mainHeader">
+      <div class="main-header">
         <a href="#">BALLARD DESGINS.</a>
-        <div class="searchBox">
+        <div class="search-box">
           <input type="search" placeholder="What can we help you find?" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="headerIcons">
-            <a href="#">
-                <i class="fa-solid fa-store"></i>
-                <span>Stores</span>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-truck"></i>
-                <span>Outer Status</span>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Account</span>
-            </a>
-            <a href="#" class="cartLink">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Cart</span>
-                <span class="cartBubble">0</span>
-                <div class="cartPopup">Your shopping cart is empty</div>
-            </a>
+        <div class="header-icons">
+          <a href="#">
+            <i class="fa-solid fa-store"></i>
+            <span>Stores</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-truck"></i>
+            <span>Outer Status</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Account</span>
+          </a>
+          <a href="#" class="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+            <span class="cartBubble">0</span>
+            <div class="cartPopup">Your shopping cart is empty</div>
+          </a>
         </div>
-        <hr>
       </div>
+      <hr id="hr1" />
+      <!-- Navbar -->
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">NEW</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">ALL NEW ITEMS</a></li>
+                <li><a href="#">THE DORM COLLECTION</a></li>
+                <li><a href="#">OUTDOOR</a></li>
+                <li><a href="#">FURNITURE</a></li>
+                <li><a href="#">MIRRORS & ART</a></li>
+                <li><a href="#">DECOR & MORE</a></li>
+                <li><a href="#">TABLETOP</a></li>
+                <li><a href="#">RUGS & DRAPERY</a></li>
+                <li><a href="#">LIGHTING</a></li>
+                <li><a href="#">BED & BATH</a></li>
+                <li><a href="#">FABRIC BY THE YARD</a></li>
+              </ul>
+              <div class="dropdown-image">
+                <img
+                  id="dropdownImgNew"
+                  src="your-image.jpg"
+                  alt="Your Entry Needs This"
+                />
+                <h4>Your Entry Needs This</h4>
+                <p>
+                  Don't miss the feminine details and narrow profile of our
+                  Dawson Cabinet.
+                </p>
+                <a href="#">SHOP NOW »</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dorm</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">ALL NEW ITEMS</a></li>
+                <li><a href="#">THE DORM COLLECTION</a></li>
+                <li><a href="#">OUTDOOR</a></li>
+                <li><a href="#">FURNITURE</a></li>
+                <li><a href="#">MIRRORS & ART</a></li>
+                <li><a href="#">DECOR & MORE</a></li>
+                <li><a href="#">TABLETOP</a></li>
+                <li><a href="#">RUGS & DRAPERY</a></li>
+                <li><a href="#">LIGHTING</a></li>
+                <li><a href="#">BED & BATH</a></li>
+                <li><a href="#">FABRIC BY THE YARD</a></li>
+              </ul>
+              <div class="dropdown-image">
+                <img
+                  id="dropdownImgDrom"
+                  src="your-image.jpg"
+                  alt="Your Entry Needs This"
+                />
+                <h4>Your Entry Needs This</h4>
+                <p>
+                  Don't miss the feminine details and narrow profile of our
+                  Dawson Cabinet.
+                </p>
+                <a href="#">SHOP NOW »</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Outdoor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Furniture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mirrors & Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Decor & More</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rugs & Drapery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lighting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bed & Bath</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fabric</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Holiday & Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="clearance">Clearance</a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr id="hr2" />
     </header>
+
+    <!-- Start WallArt -->
+    <section id="wallArt" class="container">
+      <div id="breadcrumbs">
+        <a href="#">Home</a> <span> > </span> <a href="#">Mirrors & Art</a>
+        <span> > </span> <a href="#">Shop All Wall Art</a>
+      </div>
+      <h1>Wall Art</h1>
+      <hr />
+      <div id="categories"></div>
+      <hr />
+    </section>
+
+    <!-- Start Main -->
+    <main class="container">
+      <!-- Start Filter Product & Sort -->
+      <div id="filterSort">
+        <div id="filtersProduct">
+          <h3>Filter Product</h3>
+          <div id="filter">
+            <div class="custom-select">
+              <div class="select-box" onclick="toggleOptions()">
+                Select options
+              </div>
+              <div class="options-container" id="options">
+                <label><input type="checkbox" value="books" /> Books</label>
+                <label
+                  ><input type="checkbox" value="electronics" />
+                  Electronics</label
+                >
+                <label
+                  ><input type="checkbox" value="clothing" /> Clothing</label
+                >
+              </div>
+            </div>
+            <select>
+              <option>Color</option>
+            </select>
+            <select>
+              <option>Frame Finish</option>
+            </select>
+            <select>
+              <option>Type</option>
+            </select>
+            <select>
+              <option>Orientation</option>
+            </select>
+            <select>
+              <option>Subject</option>
+            </select>
+          </div>
+        </div>
+        <div id="sortProduct">
+          <h3>Sort</h3>
+          <select id="sortSelect">
+            <option selected>What's New</option>
+            <option>Relevance</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Alphabetically</option>
+            <option>Customer Ratings</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="product-container" id="productContainer"></div>
+    </main>
+    <footer>
+      <section id="socialMedia">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </section>
+      <hr id="footer-hr-top" />
+      <section id="contact">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:(800) 536-7551">(800) 536-7551</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-comment"></i> <a href="#">Live Chat</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-envelope"></i
+          ><a href="mailto:email.example@example.com">Email Us</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-pencil"></i> <a href="#">Design Services</a>
+        </div>
+      </section>
+      <hr id="footer-hr-bottom" />
+    </footer>
+    <section id="toTop" >
+      <a href="#Header"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>
   </body>
 </html>
