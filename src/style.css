@@ -22,6 +22,7 @@
     
 }
 body{
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 .container{
@@ -478,6 +479,46 @@ h1{
 
 /* End Products */
 /* Footer */
+.slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  margin-top: 3em;
+  margin-bottom: 3.5em;
+}
+.slider-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  font-size: 0.9rem;
+}
+.disabled{
+  color: #c4c8cb;
+}
+.strong-name{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.active{
+  color: #947c6a;
+}
+.show-more-button{
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  border-radius: 0.5em;
+  background-color: white;
+  color: var(--basicFontColor);
+  border: 0.15em solid var(--hrColor);
+}
+.show-more-button:hover{
+  background-color: var(--basicFontColor);
+  color: white;
+  border: 0.15em solid var(--basicFontColor);
+}
 #socialMedia{
   display: flex;
   align-items: center;
@@ -501,7 +542,8 @@ h1{
   justify-content: space-evenly;
   gap: 1em;
   padding: 0.5em 0;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 550;
 }
 #contact i,a{
   color: var(--logoColor);
@@ -518,7 +560,7 @@ h1{
   border-left: 0.1em solid #767676;
   border-right: 0.1em solid #333333;
   border-bottom: 0.1em solid #333333;
-  padding:1.2em 1.2em;
+  padding:1em 1em;
 }
 #toTop a{
   font-size: 1rem;
