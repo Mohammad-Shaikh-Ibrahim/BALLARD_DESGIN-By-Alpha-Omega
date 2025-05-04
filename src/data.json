@@ -183,6 +183,53 @@
             "name":"Walking Alongside The Lake Art",
             "oldPrice":"$559.00 - $899.00",
             "newPrice":"$391.30 - $629.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ832_main&defaultImage=WQ832_main",
+            "isNew":"",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ832_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ832_II?$SLI_Swatch$"
+            ],
+            "name":"Intrinsic Sea Art",
+            "oldPrice":"$419.00 - $549.00",
+            "newPrice":"$293.30 - $384.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ831_main&defaultImage=WQ831_main",
+            "isNew":"",
+            "images":[],
+            "name":"Ebony Vase Art",
+            "oldPrice":"$899.00 - $1,449.00",
+            "newPrice":"$629.30 - $1,014.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ830_alt1&$SLI_LargeGrid$&defaultImage=WQ830_main",
+            "isNew":"",
+            "images":[],
+            "name":"Anemone Fields Art",
+            "oldPrice":"$969.00 - $1,329.00",
+            "newPrice":"$678.30 - $930.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ829_alt1&$SLI_LargeGrid$&defaultImage=WQ829_main",
+            "isNew":"",
+            "images":[
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ829_I?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ829_II?$SLI_Swatch$",
+                "https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/WQ829_III?$SLI_Swatch$"
+            ],
+            "name":"Living Water Art",
+            "oldPrice":"$649.00 - $1,039.00",
+            "newPrice":"$454.30 - $727.30"
+        },
+        {
+            "image":"https://akamai-scene7.ballarddesigns.com/is/image/ballarddesigns/T_Template?$SLI_LargeGrid$&$src=WQ819_main&defaultImage=WQ819_main",
+            "isNew":"",
+            "images":[],
+            "name":"Abstract Southwest Framed Canvas",
+            "oldPrice":"$649.00 - $1,039.00",
+            "newPrice":"$454.30 - $727.30"
         }
     ]      
 }

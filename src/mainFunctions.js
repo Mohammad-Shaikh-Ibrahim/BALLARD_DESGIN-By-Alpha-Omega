@@ -17,4 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-  
+
+const header = document.querySelector("header");
+const breadcrumbs = document.querySelector("#breadcrumbs");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+observer.observe(breadcrumbs);

@@ -30,7 +30,7 @@
         <a href="">Refer a Friend, Get $50 Off!</a>
       </div>
       <div class="main-header">
-        <a href="#">BALLARD DESGINS.</a>
+        <a href="#"><img id="logo" src="" alt=""></a>
         <div class="search-box">
           <input type="search" placeholder="What can we help you find?" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -51,6 +51,29 @@
           <a href="#" class="cartLink">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>Cart</span>
+            <span class="cartBubble">0</span>
+            <div class="cartPopup">Your shopping cart is empty</div>
+          </a>
+        </div>
+      </div>
+      <div class="main-header-scrolled">
+        <a href="#"><img id="logo-scrolled" src="" alt=""></a>
+        <div class="search-box-scrolled">
+          <input type="search" placeholder="What can we help you find?" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="header-icons">
+          <a href="#">
+            <i class="fa-solid fa-store"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-truck"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-circle-user"></i>
+          </a>
+          <a href="#" class="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
             <span class="cartBubble">0</span>
             <div class="cartPopup">Your shopping cart is empty</div>
           </a>
@@ -79,8 +102,8 @@
               <div class="dropdown-image">
                 <img
                   id="dropdownImgNew"
-                  src="your-image.jpg"
-                  alt="Your Entry Needs This"
+                  src=""
+                  alt="Dropdown New Image"
                 />
                 <h4>Your Entry Needs This</h4>
                 <p>
@@ -109,16 +132,16 @@
               </ul>
               <div class="dropdown-image">
                 <img
-                  id="dropdownImgDrom"
-                  src="your-image.jpg"
-                  alt="Your Entry Needs This"
+                  id="dropdownImgDorm"
+                  src=""
+                  alt="Dropdown New Dorm"
                 />
                 <h4>Your Entry Needs This</h4>
                 <p>
                   Don't miss the feminine details and narrow profile of our
                   Dawson Cabinet.
                 </p>
-                <a href="#">SHOP NOW »</a>
+                <a href="#">SHOP DORM »</a>
               </div>
             </div>
           </li>
@@ -183,12 +206,30 @@
                 <span class="arrow">&#9662;</span>
               </div>
               <div class="dropdown-options" id="priceFilters">
-                <label><input type="checkbox" value="25-100" /> <span>$25 - $100</span></label>
-                <label><input type="checkbox" value="100-250" /> <span>$100 - $250</span></label>
-                <label><input type="checkbox" value="250-500" /> <span>$250 - $500</span></label>
-                <label><input type="checkbox" value="500-1000" /> <span>$500 - $1000</span></label>
-                <label><input type="checkbox" value="1000-1500" /> <span>$1000 - $1500</span></label>
-                <label><input type="checkbox" value="1500-2000" /> <span>$1500 - $2000</span></label>
+                <label
+                  ><input type="checkbox" value="25-100" />
+                  <span>$25 - $100</span></label
+                >
+                <label
+                  ><input type="checkbox" value="100-250" />
+                  <span>$100 - $250</span></label
+                >
+                <label
+                  ><input type="checkbox" value="250-500" />
+                  <span>$250 - $500</span></label
+                >
+                <label
+                  ><input type="checkbox" value="500-1000" />
+                  <span>$500 - $1000</span></label
+                >
+                <label
+                  ><input type="checkbox" value="1000-1500" />
+                  <span>$1000 - $1500</span></label
+                >
+                <label
+                  ><input type="checkbox" value="1500-2000" />
+                  <span>$1500 - $2000</span></label
+                >
               </div>
             </div>
 
@@ -276,7 +317,15 @@
       </div>
       <!-- Products -->
       <div id="resultsCount"></div>
-      <div id="appliedFilters"></div>
+
+      <div class="filters-row">
+        <button id="resetFiltersButton">Reset Filters  x</button>
+        <div id="appliedFilters"></div>
+
+      </div>
+
+      <div class="filter-controls"></div>
+
       <div class="product-container" id="productContainer"></div>
     </main>
     <footer>

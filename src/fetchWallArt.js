@@ -1,7 +1,7 @@
 fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
-    // ========== Breadcrumbs ==========
+    // Breadcrumbs
     const breadcrumbs = data.wallArt.breadcrumbs;
     const breadcrumbHTML = breadcrumbs
       .map((item, index) =>
@@ -12,7 +12,7 @@ fetch("data.json")
       .join(" > ");
     document.getElementById("breadcrumbs").innerHTML = breadcrumbHTML;
 
-    // ========== Categories ==========
+    // Categories 
     const categoriesHTML = data.wallArt.categories
       .map(
         (category) => `

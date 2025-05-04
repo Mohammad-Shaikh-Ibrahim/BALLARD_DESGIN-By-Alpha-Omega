@@ -1,6 +1,7 @@
 let allProducts = [];
 const resultsCountElement = document.getElementById("resultsCount");
-const appliedFiltersContainer = document.getElementById("appliedFilters"); // Get the container
+const appliedFiltersContainer = document.getElementById("appliedFilters");
+const resetFiltersButton = document.getElementById("resetFiltersButton");
 
 fetch("data.json")
   .then((response) => response.json())
@@ -8,6 +9,7 @@ fetch("data.json")
     allProducts = data.products;
     renderProducts(allProducts);
     updateResultsCount(allProducts.length);
+    updateResetButtonVisibility();
 
     const checkboxes = document.querySelectorAll('#priceFilters input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
@@ -15,11 +17,20 @@ fetch("data.json")
         const filteredProducts = filterProductsByPrice();
         renderProducts(filteredProducts);
         updateResultsCount(filteredProducts.length);
-        updateAppliedFilters(); // Update the displayed filter tags
+        updateAppliedFilters();
+        updateResetButtonVisibility();
       });
     });
+
+    if (resetFiltersButton) {
+      resetFiltersButton.addEventListener("click", () => {
+        window.location.reload();
+      });
+    } else {
+      console.warn("Reset Filters button element not found in the HTML.");
+    }
   })
-  .catch((error) => console.error("Error loading JSON data:", error));
+  .catch((error) => console.error("Error:", error));
 
 function renderProducts(products) {
   const container = document.getElementById("productContainer");
@@ -87,32 +98,42 @@ function updateResultsCount(count) {
 }
 
 function updateAppliedFilters() {
-  appliedFiltersContainer.innerHTML = ""; // Clear previous filters
+  appliedFiltersContainer.innerHTML = "";
 
   const priceCheckboxes = document.querySelectorAll('#priceFilters input[type="checkbox"]:checked');
   priceCheckboxes.forEach((checkbox) => {
     const filterValue = checkbox.value;
     const filterTag = document.createElement("div");
-    filterTag.classList.add("filter-tag"); // You'll need to style this class
+    filterTag.classList.add("filter-tag");
 
     const filterText = document.createElement("span");
-    filterText.textContent = `$${filterValue.replace("-", " - $")} `; // Format the price range
+    filterText.textContent = `$${filterValue.replace("-", " - $")} `;
 
     const removeButton = document.createElement("span");
     removeButton.textContent = "x";
-    removeButton.classList.add("remove-filter"); 
+    removeButton.classList.add("remove-filter");
     removeButton.addEventListener("click", () => {
       checkbox.checked = false;
-      const filteredProducts = filterProductsByPrice(); 
-      renderProducts(filteredProducts); 
-      updateResultsCount(filteredProducts.length); 
-      updateAppliedFilters(); 
+      const filteredProducts = filterProductsByPrice();
+      renderProducts(filteredProducts);
+      updateResultsCount(filteredProducts.length);
+      updateAppliedFilters();
+      updateResetButtonVisibility();
     });
 
     filterTag.appendChild(filterText);
     filterTag.appendChild(removeButton);
     appliedFiltersContainer.appendChild(filterTag);
   });
+}
 
-
+function updateResetButtonVisibility() {
+  const checkedCheckboxes = document.querySelectorAll('#priceFilters input[type="checkbox"]:checked');
+  if (resetFiltersButton) {
+    if (checkedCheckboxes.length > 0) {
+      resetFiltersButton.style.display = "block";
+    } else {
+      resetFiltersButton.style.display = "none";
+    }
+  }
 }
