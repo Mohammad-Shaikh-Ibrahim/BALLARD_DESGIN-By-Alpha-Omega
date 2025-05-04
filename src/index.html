@@ -16,7 +16,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="fetchData.js" type="module" defer></script>
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="fetchHeader.js" type="module" defer></script>
+    <script src="fetchWallArt.js" type="module" defer></script>
+    <script src="fetchProducts.js" type="module" defer></script>
     <script src="mainFunctions.js" type="module" defer></script>
   </head>
   <body>
@@ -174,38 +177,83 @@
         <div id="filtersProduct">
           <h3>Filter Product</h3>
           <div id="filter">
-            <div class="custom-select">
-              <div class="select-box" onclick="toggleOptions()">
-                Select options
+            <div class="filter-dropdown">
+              <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                <strong>Price Range</strong>
+                <span class="arrow">&#9662;</span>
               </div>
-              <div class="options-container" id="options">
-                <label><input type="checkbox" value="books" /> Books</label>
-                <label
-                  ><input type="checkbox" value="electronics" />
-                  Electronics</label
-                >
-                <label
-                  ><input type="checkbox" value="clothing" /> Clothing</label
-                >
+              <div class="dropdown-options" id="priceFilters">
+                <label><input type="checkbox" value="25-100" /> <span>$25 - $100</span></label>
+                <label><input type="checkbox" value="100-250" /> <span>$100 - $250</span></label>
+                <label><input type="checkbox" value="250-500" /> <span>$250 - $500</span></label>
+                <label><input type="checkbox" value="500-1000" /> <span>$500 - $1000</span></label>
+                <label><input type="checkbox" value="1000-1500" /> <span>$1000 - $1500</span></label>
+                <label><input type="checkbox" value="1500-2000" /> <span>$1500 - $2000</span></label>
               </div>
             </div>
-            <select>
-              <option>Color</option>
-            </select>
-            <select>
-              <option>Frame Finish</option>
-            </select>
-            <select>
-              <option>Type</option>
-            </select>
-            <select>
-              <option>Orientation</option>
-            </select>
-            <select>
-              <option>Subject</option>
-            </select>
+
+            <div class="filter-dropdown">
+              <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                <strong>Color</strong>
+                <span class="arrow">&#9662;</span>
+              </div>
+              <div class="dropdown-options">
+                <label><input type="checkbox" /> Black</label>
+                <label><input type="checkbox" /> Blue</label>
+                <label><input type="checkbox" /> Brown</label>
+              </div>
+            </div>
+
+            <div class="filter-dropdown">
+              <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                <strong>Frame Finish</strong>
+                <span class="arrow">&#9662;</span>
+              </div>
+              <div class="dropdown-options">
+                <label><input type="checkbox" /> Black</label>
+                <label><input type="checkbox" /> Brass</label>
+                <label><input type="checkbox" /> Brown</label>
+              </div>
+            </div>
+
+            <div class="filter-dropdown">
+              <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                <strong>Type</strong>
+                <span class="arrow">&#9662;</span>
+              </div>
+              <div class="dropdown-options">
+                <label><input type="checkbox" /> Canvas</label>
+                <label><input type="checkbox" /> Framed Art</label>
+                <label><input type="checkbox" /> Wood Prints</label>
+              </div>
+            </div>
+
+            <div class="filter-dropdown">
+              <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                <strong>Orientation</strong>
+                <span class="arrow">&#9662;</span>
+              </div>
+              <div class="dropdown-options">
+                <label><input type="checkbox" /> Both</label>
+                <label><input type="checkbox" /> Horizontal</label>
+                <label><input type="checkbox" /> Vertical</label>
+              </div>
+            </div>
+
+            <div class="filter-dropdown">
+              <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                <strong>Subject</strong>
+                <span class="arrow">&#9662;</span>
+              </div>
+              <div class="dropdown-options">
+                <label><input type="checkbox" /> Abstract</label>
+                <label><input type="checkbox" /> Animal</label>
+                <label><input type="checkbox" /> Cityspace</label>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Sort -->
         <div id="sortProduct">
           <h3>Sort</h3>
           <select id="sortSelect">
@@ -216,18 +264,31 @@
             <option>Alphabetically</option>
             <option>Customer Ratings</option>
           </select>
+          <label class="switch-label">
+            <input type="checkbox" />
+            <span class="switch"></span>
+            <span class="in-stock-text">
+              <strong>IN STOCK</strong><br />
+              <small>Ships in 1–7 business days</small>
+            </span>
+          </label>
         </div>
       </div>
-
       <!-- Products -->
+      <div id="resultsCount"></div>
+      <div id="appliedFilters"></div>
       <div class="product-container" id="productContainer"></div>
     </main>
     <footer>
       <section class="slider">
         <div class="slider-page">
-          <span class="disabled"><i class="fa-solid fa-arrow-left"></i> Prev</span>
+          <span class="disabled"
+            ><i class="fa-solid fa-arrow-left"></i> Prev</span
+          >
           <span class="strong-name">Page 1 of 5 </span>
-          <span class="active">Next <i class="fa-solid fa-arrow-right"></i></span>
+          <span class="active"
+            >Next <i class="fa-solid fa-arrow-right"></i
+          ></span>
         </div>
         <div>
           <button class="show-more-button">SHOW MORE</button>
@@ -259,7 +320,7 @@
       </section>
       <hr id="footer-hr-bottom" />
     </footer>
-    <section id="toTop" >
+    <section id="toTop">
       <a href="#Header"><i class="fa-solid fa-arrow-up"></i></a>
     </section>
   </body>
