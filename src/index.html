@@ -15,8 +15,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/wallArt.css" />
+    <link rel="stylesheet" href="/css/filter&sort.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- Custom JS -->
     <script src="fetchHeader.js" type="module" defer></script>
     <script src="fetchWallArt.js" type="module" defer></script>
     <script src="fetchProducts.js" type="module" defer></script>
@@ -25,10 +33,14 @@
   <body>
     <!-- Start Header -->
     <header id="Header" class="container">
+      <!-- Start Top Header -->
       <div class="top-header">
         <a href="#">Free Desgin Services</a>
         <a href="">Refer a Friend, Get $50 Off!</a>
       </div>
+      <!-- End Top Header -->
+
+      <!-- Start Main Header -->
       <div class="main-header">
         <a href="#"><img id="logo" src="" alt="" /></a>
         <div class="search-box">
@@ -56,6 +68,9 @@
           </a>
         </div>
       </div>
+      <!-- End Main Header -->
+
+      <!-- Start Scrolled Header -->
       <div class="main-header-scrolled">
         <a href="#"><img id="logo-scrolled" src="" alt="" /></a>
         <div class="search-box-scrolled">
@@ -79,6 +94,9 @@
           </a>
         </div>
       </div>
+      <!-- Start Scrolled Header -->
+
+      <!-- Start Responsive Header -->
       <div class="responsive">
         <div class="main-header-responsive">
           <div class="header-icons-responsive1">
@@ -102,9 +120,10 @@
           </div>
         </div>
       </div>
+      <!-- End Responsive Header -->
 
       <hr id="hr1" />
-      <!-- Navbar -->
+      <!-- Start Navbar -->
       <nav>
         <ul class="nav-list">
           <li class="nav-item">
@@ -193,53 +212,60 @@
           </li>
         </ul>
       </nav>
-
+      <!-- End Navbar -->
       <hr id="hr2" />
     </header>
-    <div class="search-box-responsive container" id="searchBoxResponsive">
+    <!-- End Header -->
+
+    <!-- Start Responsive Search Box -->
+    <section class="search-box-responsive container" id="searchBoxResponsive">
       <input type="search" placeholder="What can we help you find?" />
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+    </section>
+    <!-- End Responsive Search Box -->
 
-    <!-- Responsive Navbar -->
-    <div id="side-menu" class="side-menu">
-      <div class="side-menu-header">
-        <h2>Shop by Category</h2>
-        <button id="menu-close"><i class="fa-solid fa-xmark"></i></button>
+    <!-- Start Responsive Navbar -->
+    <aside>
+      <div id="side-menu" class="side-menu">
+        <div class="side-menu-header">
+          <h2>Shop by Category</h2>
+          <button id="menu-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+          <li>New</li>
+          <li>Dorm</li>
+          <li>Outdoor</li>
+          <li>Furniture</li>
+          <li>Mirrors & Art</li>
+          <li>Decor & More</li>
+          <li>Rugs & Drapery</li>
+          <li>Lighting</li>
+          <li>Bed & Bath</li>
+          <li>Fabric</li>
+          <li>Holiday & Gifts</li>
+          <li class="clearance">Clearance</li>
+        </ul>
+        <div class="header-icons">
+          <a href="#">
+            <i class="fa-solid fa-store"></i>
+            <span>Stores</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-truck"></i>
+            <span>Outer Status</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Account</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-headset"></i>
+            <span>Contact</span>
+          </a>
+        </div>
       </div>
-      <ul>
-        <li>New</li>
-        <li>Dorm</li>
-        <li>Outdoor</li>
-        <li>Furniture</li>
-        <li>Mirrors & Art</li>
-        <li>Decor & More</li>
-        <li>Rugs & Drapery</li>
-        <li>Lighting</li>
-        <li>Bed & Bath</li>
-        <li>Fabric</li>
-        <li>Holiday & Gifts</li>
-        <li class="clearance">Clearance</li>
-      </ul>
-      <div class="header-icons">
-        <a href="#">
-          <i class="fa-solid fa-store"></i>
-          <span>Stores</span>
-        </a>
-        <a href="#">
-          <i class="fa-solid fa-truck"></i>
-          <span>Outer Status</span>
-        </a>
-        <a href="#">
-          <i class="fa-solid fa-circle-user"></i>
-          <span>Account</span>
-        </a>
-        <a href="#">
-          <i class="fa-solid fa-headset"></i>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
+    </aside>
+    <!-- End Responsive Navbar -->
 
     <!-- Start WallArt -->
     <section id="wallArt" class="container">
@@ -252,11 +278,13 @@
       <div id="categories"></div>
       <hr />
     </section>
+    <!-- End WallArt -->
 
     <!-- Start Main -->
     <main class="container">
       <!-- Start Filter Product & Sort -->
       <div id="filterSort">
+        <!-- Start Filters -->
         <div id="filtersProduct">
           <h3>Filter Product</h3>
           <div id="filter">
@@ -354,7 +382,9 @@
             </div>
           </div>
         </div>
-        <!-- Sort -->
+        <!-- End Filters -->
+
+        <!-- Start Sort -->
         <div id="sortProduct">
           <h3>Sort</h3>
           <select id="sortSelect">
@@ -375,18 +405,31 @@
           </label>
         </div>
       </div>
-      <!-- Products -->
+      <!-- End Sort -->
+
+      <!-- Start Filter Results -->
       <div id="resultsCount"></div>
 
       <div class="filters-row">
         <button id="resetFiltersButton">Reset Filters x</button>
         <div id="appliedFilters"></div>
       </div>
-
       <div class="filter-controls"></div>
+      <!-- End Filter Results -->
 
+      <!-- Start Products -->
       <div class="product-container" id="productContainer"></div>
+      <!-- End Products -->
     </main>
+    <!-- End Main -->
+
+    <!-- Start Button To-Top -->
+    <section id="toTop">
+      <a href="#Header"><i class="fa-solid fa-arrow-up"></i></a>
+    </section>
+    <!-- End Button To-Top -->
+
+    <!-- Start Footer -->
     <footer>
       <section class="slider">
         <div class="slider-page">
@@ -428,8 +471,6 @@
       </section>
       <hr id="footer-hr-bottom" />
     </footer>
-    <section id="toTop">
-      <a href="#Header"><i class="fa-solid fa-arrow-up"></i></a>
-    </section>
+    <!-- End Footer -->
   </body>
 </html>

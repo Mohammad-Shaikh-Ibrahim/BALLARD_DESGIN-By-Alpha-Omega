@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+
+/* Start Header */
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+/* Top Header */
+header .top-header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8em;
+    padding:0.5em 0 ;
+}
+header .top-header a{
+    text-decoration: none;
+    color:var(--basicFontColor);
+    font-size: 14px;
+    font-weight: 450;
+    font-family: var(--headerFont);
+    border-bottom: 0.1em solid transparent;
+}
+header .top-header a:hover{
+    cursor: pointer;
+    border-bottom: 0.1em solid var(--basicFontColor);
+}
+
+/* Main Header */
+header .main-header{
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header #logo{
+  width: 25em;
+}
+header .search-box{
+    padding:0.5em;
+    border: 0.075em solid var(--hrColor);
+    border-radius: 0.2em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em;
+    outline: 0.25em solid transparent;
+}
+header .search-box:focus-within{
+    outline: 0.25em solid rgb(148, 188, 245);
+    border-radius: 0.3em;
+}
+header .search-box input{
+    width:92%;
+    font-size: 1rem;
+    border: none;
+}
+header .search-box input::placeholder{
+    color: var(--basicFontColor);
+    font-weight: 550;
+}
+header .search-box input:focus{
+    outline: none;
+    border: none;
+}
+header .search-box button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header .search-box button i{
+    font-size: 1.2rem;
+    color: var(--logoColor);  
+}
+header .header-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+    padding-right: 1.5em;
+    background-color: white;
+}
+header .header-icons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1em solid transparent;
+}
+header .header-icons a:hover{
+    border-bottom: 0.1em solid var(--logoColor);
+}
+header .header-icons a i{
+    color: var(--logoColor);
+    font-size: 1.6rem;
+}
+header .header-icons a span{
+    color: var(--headerIconColor);
+    font-size: 12px;
+}
+header .cartLink {
+    position: relative;
+}
+
+header .cartBubble {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: var(--headerIconColor);
+    color: white !important;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+header .cartPopup {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 3em; 
+    left: 50%;
+    transform: translateX(-90%);
+    background-color: white;
+    color: var(--basicFontColor);
+    padding: 1.5em 1em;
+    width: 30em;
+    font-size: 12px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+}
+
+header .cartLink:hover .cartPopup {
+    display: block;
+}
+header hr{
+    border: 0;
+    border-top: 1px solid var(--hrColor);
+  }
+header  #hr1{
+    margin: 0 calc(-50vw + 61%); 
+    width: 100vw; 
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 1.2em 0 0.5em;
+}
+header #hr2{
+    margin: 0 calc(-50vw + 61%); 
+    width: 100vw; 
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin: 0.5em 0 1.2em;
+}
+
+/* Header scrolled */
+header .main-header-scrolled{
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+header #logo-scrolled{
+    width: 20em;
+    height: 1.5em;
+  }
+header .search-box-scrolled{
+    border: 0.075em solid var(--hrColor);
+    border-radius: 0.2em;
+    width: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4em;
+    outline: 0.25em solid transparent;
+}
+header .search-box-scrolled:focus-within{
+    outline: 0.25em solid rgb(148, 188, 245);
+    border-radius: 0.3em;
+}
+header .search-box-scrolled input{
+    width:92%;
+    font-size: 1rem;
+    border: none;
+}
+header .search-box-scrolled input::placeholder{
+    color: var(--basicFontColor);
+    font-weight: 550;
+}
+header .search-box-scrolled input:focus{
+    outline: none;
+    border: none;
+}
+header .search-box-scrolled button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header .search-box-scrolled button i{
+    font-size: 1.2rem;
+    color: var(--logoColor);  
+}
+
+header.scrolled .top-header {
+  display: none;
+}
+header.scrolled .main-header {
+  display: none;
+}
+
+header.scrolled .main-header-scrolled {
+  display: flex;
+}
