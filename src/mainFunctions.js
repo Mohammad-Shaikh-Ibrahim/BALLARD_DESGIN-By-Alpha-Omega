@@ -37,3 +37,16 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(breadcrumbs);
+
+
+const toggleBtn = document.getElementById('menu-toggle');
+const closeBtn = document.getElementById('menu-close');
+const sideMenu = document.getElementById('side-menu');
+
+toggleBtn.addEventListener('click', () => {
+  sideMenu.classList.add('show');
+});
+
+closeBtn.addEventListener('click', () => {
+  sideMenu.classList.remove('show');
+});

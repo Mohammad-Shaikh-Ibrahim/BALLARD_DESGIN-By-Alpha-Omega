@@ -9,6 +9,10 @@ fetch('data.json')
     const logoImgScrolled = document.getElementById("logo-scrolled");
     logoImgScrolled.src = data.header.logoImage;
     logoImgScrolled.alt = "Ballard Desgins Logo"; 
+    // Logo Responsive
+    const logoImgResponsive = document.getElementById("logo-responsive");
+    logoImgResponsive.src = data.header.logoImage;
+    logoImgResponsive.alt = "Ballard Desgins Logo"; 
 
     // Navbar Dropdown
     const dropdownNavbarNew = document.getElementById("dropdownImgNew") 

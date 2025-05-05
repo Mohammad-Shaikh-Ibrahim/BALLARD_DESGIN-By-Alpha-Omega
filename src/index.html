@@ -30,7 +30,7 @@
         <a href="">Refer a Friend, Get $50 Off!</a>
       </div>
       <div class="main-header">
-        <a href="#"><img id="logo" src="" alt=""></a>
+        <a href="#"><img id="logo" src="" alt="" /></a>
         <div class="search-box">
           <input type="search" placeholder="What can we help you find?" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="main-header-scrolled">
-        <a href="#"><img id="logo-scrolled" src="" alt=""></a>
+        <a href="#"><img id="logo-scrolled" src="" alt="" /></a>
         <div class="search-box-scrolled">
           <input type="search" placeholder="What can we help you find?" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -79,6 +79,30 @@
           </a>
         </div>
       </div>
+      <div class="responsive">
+        <div class="main-header-responsive">
+          <div class="header-icons-responsive1">
+            <button id="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="#">
+              <i class="fa-solid fa-circle-user"></i>
+            </a>
+          </div>
+          <a href="#"><img id="logo-responsive" src="" alt="" /></a>
+          <div class="header-icons-responsive2">
+            <a href="#searchBoxResponsive">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" class="cartLink">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cartBubble">0</span>
+              <div class="cartPopup">Your shopping cart is empty</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <hr id="hr1" />
       <!-- Navbar -->
       <nav>
@@ -100,11 +124,7 @@
                 <li><a href="#">FABRIC BY THE YARD</a></li>
               </ul>
               <div class="dropdown-image">
-                <img
-                  id="dropdownImgNew"
-                  src=""
-                  alt="Dropdown New Image"
-                />
+                <img id="dropdownImgNew" src="" alt="Dropdown New Image" />
                 <h4>Your Entry Needs This</h4>
                 <p>
                   Don't miss the feminine details and narrow profile of our
@@ -131,11 +151,7 @@
                 <li><a href="#">FABRIC BY THE YARD</a></li>
               </ul>
               <div class="dropdown-image">
-                <img
-                  id="dropdownImgDorm"
-                  src=""
-                  alt="Dropdown New Dorm"
-                />
+                <img id="dropdownImgDorm" src="" alt="Dropdown New Dorm" />
                 <h4>Your Entry Needs This</h4>
                 <p>
                   Don't miss the feminine details and narrow profile of our
@@ -173,13 +189,57 @@
             <a class="nav-link" href="#">Holiday & Gifts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="clearance">Clearance</a>
+            <a class="nav-link" href="#" class="clearance">Clearance</a>
           </li>
         </ul>
       </nav>
 
       <hr id="hr2" />
     </header>
+    <div class="search-box-responsive container" id="searchBoxResponsive">
+      <input type="search" placeholder="What can we help you find?" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- Responsive Navbar -->
+    <div id="side-menu" class="side-menu">
+      <div class="side-menu-header">
+        <h2>Shop by Category</h2>
+        <button id="menu-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul>
+        <li>New</li>
+        <li>Dorm</li>
+        <li>Outdoor</li>
+        <li>Furniture</li>
+        <li>Mirrors & Art</li>
+        <li>Decor & More</li>
+        <li>Rugs & Drapery</li>
+        <li>Lighting</li>
+        <li>Bed & Bath</li>
+        <li>Fabric</li>
+        <li>Holiday & Gifts</li>
+        <li class="clearance">Clearance</li>
+      </ul>
+      <div class="header-icons">
+        <a href="#">
+          <i class="fa-solid fa-store"></i>
+          <span>Stores</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-truck"></i>
+          <span>Outer Status</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>Account</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-headset"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
 
     <!-- Start WallArt -->
     <section id="wallArt" class="container">
@@ -319,9 +379,8 @@
       <div id="resultsCount"></div>
 
       <div class="filters-row">
-        <button id="resetFiltersButton">Reset Filters  x</button>
+        <button id="resetFiltersButton">Reset Filters x</button>
         <div id="appliedFilters"></div>
-
       </div>
 
       <div class="filter-controls"></div>

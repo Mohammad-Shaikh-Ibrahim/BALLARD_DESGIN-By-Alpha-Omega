@@ -28,8 +28,7 @@ body{
 }
 .container{
     width:82vw;
-    margin: auto;
-    
+    margin: auto;  
 }
 /* Start Header */
 /* Top Header */
@@ -106,6 +105,7 @@ body{
     align-items: center;
     gap: 1.5em;
     padding-right: 1.5em;
+    background-color: white;
 }
 .header-icons a{
     display: flex;
@@ -250,10 +250,13 @@ header.scrolled .main-header {
 header.scrolled .main-header-scrolled {
   display: flex;
 }
-
+/* Respoinsive */
+.responsive,.search-box-responsive,.side-menu{
+  display: none;
+}
   /* navbar */
 
-  #clearance{
+  .clearance{
     color: #e03e3e ;
   }
 
