@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+
+@media (max-width: 992px) {
+header .top-header,
+header .main-header,
+header .main-header-scrolled,
+nav,
+header #hr1,
+header #hr2 {
+    display: none;
+}
+header .main-header-scrolled {
+    display: none;
+}
+header.scrolled .main-header {
+    display: none;
+}
+header.scrolled .main-header-scrolled {
+    display: none;
+}
+header .responsive{
+    display: block;
+
+}
+header .main-header-responsive{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 1em;
+}
+header #logo-responsive{
+    height: 1.5em;
+    width: 15em;
+}
+header .header-icons-responsive1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: white;
+}
+header .header-icons-responsive1 button{
+  border: none;
+}
+header .header-icons-responsive2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: white;
+}
+header .header-icons-responsive1 i,
+header .header-icons-responsive2 i{
+    font-size: 1.2rem;
+}
+.search-box-responsive{
+    border: 0.075em solid var(--hrColor);
+    border-radius: 0.2em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4em;
+    outline: 0.25em solid transparent;
+    margin-bottom: 2em;
+}
+.search-box-responsive:focus-within{
+    outline: 0.25em solid rgb(148, 188, 245);
+    border-radius: 0.3em;
+}
+.search-box-responsive input{
+    width:92%;
+    font-size: 1rem;
+    border: none;
+}
+.search-box-responsive input::placeholder{
+    color: var(--basicFontColor);
+    font-weight: 550;
+}
+.search-box-responsive input:focus{
+    outline: none;
+    border: none;
+}
+.search-box-responsive button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.search-box-responsive button i{
+    font-size: 1.2rem;
+    color: var(--logoColor);  
+}
+/* Navbar */
+aside .side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+aside .side-menu.show {
+    left: 0;
+    display: block;
+}
+aside .side-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+aside .side-menu-header h2{
+    font-style: italic;
+    font-family: var(--cormorantFont);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+aside .side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside .side-menu li {
+    font-family: var(--headerFont);
+    font-size: 0.9rem;
+    font-weight: 550;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+aside #menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+aside #menu-close{
+    background-color: white;
+    border: none;
+}
+aside #menu-close i{
+    font-size: 1.2rem;
+    color: var(--logoColor);  
+}
+aside .header-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+    padding-right: 1.5em;
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    padding: 1em;
+    z-index: 1000;
+    background-color: #f3f1e9;
+}
+aside .clearance{
+  color: #e03e3e ;
+}
+}
