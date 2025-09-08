@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@100..900&display=swap');
+
+
+
+:root{
+    --basicFontColor:#333333;
+    --logoColor:#635446;
+    --headerIconColor:#414141;
+    --headerFont:"Montserrat", Verdana, Helvetica, sans-serif;
+    --logoFont:"Bondoi", Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--headerFont);
+    text-decoration: none;
+}
+.container{
+    width:82vw;
+    margin: auto;
+    
+}
+/* Start Header */
+/* Top Header */
+.topHeader{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8em;
+    padding:0.5em 0 ;
+}
+.topHeader a{
+    text-decoration: none;
+    color:var(--basicFontColor);
+    font-size: 14px;
+    font-weight: 450;
+    font-family: var(--headerFont);
+    border-bottom: 0.1em solid transparent;
+}
+.topHeader a:hover{
+    cursor: pointer;
+    border-bottom: 0.1em solid var(--basicFontColor);
+}
+
+/* Main Header */
+.mainHeader{
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainHeader a{
+    text-transform: uppercase;
+    color: var(--logoColor);
+    font-size: 2rem;
+    font-weight: 450;
+    font-family: var(--headerFont);
+}
+.searchBox{
+    padding:0.5em;
+    border: #cccccc 0.075em solid;
+    border-radius: 0.2em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em;
+    outline: 0.25em solid transparent;
+}
+.searchBox:focus-within{
+    outline: 0.25em solid rgb(148, 188, 245);
+    border-radius: 0.3em;
+}
+.searchBox input{
+    width:92%;
+    font-size: 1rem;
+    border: none;
+}
+.searchBox input::placeholder{
+    color: var(--basicFontColor);
+    font-weight: 550;
+}
+.searchBox input:focus{
+    outline: none;
+    border: none;
+}
+.searchBox button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.searchBox button i{
+    font-size: 1.2rem;
+    color: var(--logoColor);  
+}
+.headerIcons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+    padding-right: 1.5em;
+}
+.headerIcons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1em solid transparent;
+}
+.headerIcons a:hover{
+    border-bottom: 0.1em solid var(--logoColor);
+}
+.headerIcons a i{
+    color: var(--logoColor);
+    font-size: 1.6rem;
+}
+.headerIcons a span{
+    color: var(--headerIconColor);
+    font-size: 12px;
+}
+.cartLink {
+    position: relative;
+}
+
+.cartBubble {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: var(--headerIconColor);
+    color: white !important;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cartPopup {
+    display: none;
+    position: absolute;
+    top: 3em; /* Adjust position */
+    left: 50%;
+    transform: translateX(-90%);
+    background-color: white;
+    color: var(--basicFontColor);
+    padding: 1.5em 1em;
+    width: 30em;
+    font-size: 12px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+}
+
+.cartLink:hover .cartPopup {
+    display: block;
+}
+/* End Header */
